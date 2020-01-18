@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shitbomberjogo.api", "shitbomberjogo.api", "{BA5D1911-F3BB-48A9-8475-63C80A0E5750}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "shitbomber.jogo.api", "shitbomber.jogo.api\shitbomber.jogo.api.csproj", "{5772524E-23E5-498D-81AC-5B6D6755B0CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shitbomberjogo.domain", "shitbomberjogo.domain", "{A2ED4060-A6EF-4718-BCE5-E8DAB386554F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shitbomberjogo.data", "shitbomberjogo.data", "{F769EF2A-D926-45FE-8BDE-7CAF6CEEA0BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shitbomberjogo.service", "shitbomberjogo.service", "{42064E43-40FA-4940-AA47-CE3D8F62A289}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "shitbomber.jogo.domain", "shitbomber.jogo.domain\shitbomber.jogo.domain.csproj", "{92AA970E-EEF5-49CB-ACA7-E005D72E1A07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "shitbomber.jogo.service", "shitbomber.jogo.service\shitbomber.jogo.service.csproj", "{53D26595-8C60-45CD-B8C1-189E0E7AF928}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "shitbomber.jogo.data", "shitbomber.jogo.data\shitbomber.jogo.data.csproj", "{C42A2FB2-4845-4759-AAB2-C15A05906D0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5772524E-23E5-498D-81AC-5B6D6755B0CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5772524E-23E5-498D-81AC-5B6D6755B0CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5772524E-23E5-498D-81AC-5B6D6755B0CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5772524E-23E5-498D-81AC-5B6D6755B0CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92AA970E-EEF5-49CB-ACA7-E005D72E1A07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92AA970E-EEF5-49CB-ACA7-E005D72E1A07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92AA970E-EEF5-49CB-ACA7-E005D72E1A07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92AA970E-EEF5-49CB-ACA7-E005D72E1A07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53D26595-8C60-45CD-B8C1-189E0E7AF928}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53D26595-8C60-45CD-B8C1-189E0E7AF928}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53D26595-8C60-45CD-B8C1-189E0E7AF928}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53D26595-8C60-45CD-B8C1-189E0E7AF928}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C42A2FB2-4845-4759-AAB2-C15A05906D0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C42A2FB2-4845-4759-AAB2-C15A05906D0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C42A2FB2-4845-4759-AAB2-C15A05906D0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C42A2FB2-4845-4759-AAB2-C15A05906D0A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5772524E-23E5-498D-81AC-5B6D6755B0CA} = {BA5D1911-F3BB-48A9-8475-63C80A0E5750}
+		{92AA970E-EEF5-49CB-ACA7-E005D72E1A07} = {A2ED4060-A6EF-4718-BCE5-E8DAB386554F}
+		{53D26595-8C60-45CD-B8C1-189E0E7AF928} = {42064E43-40FA-4940-AA47-CE3D8F62A289}
+		{C42A2FB2-4845-4759-AAB2-C15A05906D0A} = {F769EF2A-D926-45FE-8BDE-7CAF6CEEA0BF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B262330-FFE9-4E00-AB39-1F15C274890E}
+	EndGlobalSection
+EndGlobal
