@@ -92,8 +92,7 @@ namespace shitbomber.jogo.api
 
 
             //services.BuildServiceProvider().GetService<ITesteServiceBus>().Subscribe();
-            
-            //services.AddTransient<I, UnitOfWork>();
+           
         }
 
     }

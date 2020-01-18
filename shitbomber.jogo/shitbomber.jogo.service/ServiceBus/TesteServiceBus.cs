@@ -27,7 +27,7 @@ namespace shitbomber.jogo.service.ServiceBus
             {
                 Teste modelRecebido = body.Deserializer<Teste>();
 
-
+                string batata = "ata";
             });
         }
     }
