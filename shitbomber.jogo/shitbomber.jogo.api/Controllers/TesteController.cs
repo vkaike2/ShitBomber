@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using shitbomber.jogo.domain.IServices;
 using shitbomber.jogo.domain.Model;
+using shitbomber.jogo.domain.Requests;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace shitbomber.jogo.api.Controllers
@@ -11,48 +11,41 @@ namespace shitbomber.jogo.api.Controllers
     [ApiController]
     public class TesteController : ControllerBase
     {
-        public static List<Teste> tabelaTeste = new List<Teste>();
+        private readonly ITesteService _testeService;
+
+        public TesteController(ITesteService testeService)
+        {
+            _testeService = testeService;
+        }
 
         [HttpGet]
         [Route("{id}")]
         public async Task<IActionResult> GetTeste(Guid id)
         {
-            Teste modelCadastrado = tabelaTeste.FirstOrDefault(e => e.Id == id);
-            return Ok(modelCadastrado);
+            PadraoResponse<Teste> response = await _testeService.GetTeste(id);
+            return Ok(response);
         }
 
         [HttpPost]
         public async Task<IActionResult> PostTeste(Teste model)
         {
-            model.Id = Guid.NewGuid();
-            tabelaTeste.Add(model);
-            return Ok(model);
+            PadraoResponse<Teste> response = await _testeService.PostTeste(model);
+            return Ok(response);
         }
 
         [HttpPut]
         public async Task<IActionResult> PutTeste(Teste model)
         {
-            if (model.Id == Guid.Empty) return BadRequest("O CAMPO Id é obrigatório!");
-
-            Teste modelCadastrado = tabelaTeste.FirstOrDefault(e => e.Id == model.Id);
-
-            if (modelCadastrado is null) return BadRequest("Manda o Id certo bobão!");
-
-            modelCadastrado.Nome = model.Nome;
-
-            return Ok(modelCadastrado);
+            PadraoResponse<Teste> response = await _testeService.PutTeste(model);
+            return Ok(response);
         }
 
         [HttpDelete]
         [Route("{id}")]
         public async Task<IActionResult> DeleteTeste(Guid id)
         {
-            if (id == Guid.Empty) return BadRequest("O CAMPO Id é obrigatório!");
-
-            Teste modelCadastrado = tabelaTeste.FirstOrDefault(e => e.Id == id);
-            tabelaTeste.Remove(modelCadastrado);
-
-            return Ok("Xablau deletado!");
+            PadraoResponse<Teste> response = await _testeService.DeleteTeste(id);
+            return Ok(response);
         }
     }
 }

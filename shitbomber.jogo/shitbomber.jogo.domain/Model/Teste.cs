@@ -2,9 +2,8 @@
 
 namespace shitbomber.jogo.domain.Model
 {
-    public class Teste
+    public class Teste : ModelBase
     {
-        public Guid Id { get; set; }
         public string Nome { get; set; }
     }
 }

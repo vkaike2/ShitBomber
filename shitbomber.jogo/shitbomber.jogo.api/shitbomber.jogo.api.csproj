@@ -15,7 +15,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\shitbomber.jogo.data\shitbomber.jogo.data.csproj" />
     <ProjectReference Include="..\shitbomber.jogo.domain\shitbomber.jogo.domain.csproj" />
+    <ProjectReference Include="..\shitbomber.jogo.service\shitbomber.jogo.service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
