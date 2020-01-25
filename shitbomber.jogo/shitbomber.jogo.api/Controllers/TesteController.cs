@@ -18,6 +18,13 @@ namespace shitbomber.jogo.api.Controllers
             _testeService = testeService;
         }
 
+        //[HttpGet]
+        //[Route("adsdsa")]
+        //public IActionResult Get(string teste)
+        //{
+        //    return Ok(teste); 
+        //}
+
         [HttpGet]
         [Route("{id}")]
         public async Task<IActionResult> GetTeste(Guid id)
